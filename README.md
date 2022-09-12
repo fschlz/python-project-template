@@ -5,7 +5,7 @@
 - Set and activate it `pyenv global 3.10.6 && pyenv shell 3.10.6`
 - `pip install --upgrade pip`
 - `pip install cookiecutter`
-- `cookiecutter https://github.com/fschlz/python-project-template --checkout master`
+- `cookiecutter https://github.com/fschlz/python-project-template.git --checkout master`
 - Follow the instructions in the prompt
 - If you do not have `poetry` installed, I recommend you use it to manage your project dependencies over conda, pipenv, or pip
 - Run `poetry install` to setup a virtualenv
