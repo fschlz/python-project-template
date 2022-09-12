@@ -1,4 +1,4 @@
-# Congrats 😏 -  you just generated yoursef a syouet python project structure
+# Congrats 😏 -  you just generated yoursef a sweet python project structure
 
 ## 🤔 Now What?
 
