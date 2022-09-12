@@ -7,8 +7,8 @@
 
 export DOCKER=docker
 export DOCKERFILE=Dockerfile
-export IMAGE_NAME=templateproject-image
-export CONTAINER_NAME=templateproject-container
+export IMAGE_NAME={{ cookiecutter.package_name }}-image
+export CONTAINER_NAME={{ cookiecutter.package_name }}-container
 export HOST_PORT=9999
 export CONTAINER_PORT=9999
 

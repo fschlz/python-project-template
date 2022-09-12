@@ -3,5 +3,6 @@
     "project_folder_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "package_name": "{{ cookiecutter.project_folder_name.lower().replace('-', '_') }}",
     "version": "0.1.0",
-    "description": "Describe your project in one sentence"
+    "description": "Describe your project in one sentence",
+    "license": "Under which license would you like to develop?"
 }

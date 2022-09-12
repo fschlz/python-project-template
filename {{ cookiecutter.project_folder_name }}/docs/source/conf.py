@@ -24,7 +24,7 @@ import importlib.metadata
 DISTRIBUTION_METADATA = importlib.metadata.metadata("{{ cookiecutter.package_name }}")
 
 project = "{{ cookiecutter.project_name }}"
-copyright = "MIT"
+copyright = "{{ cookiecutter.license }}"
 author = DISTRIBUTION_METADATA["authors"]
 
 # The full version, including alpha/beta/rc tags

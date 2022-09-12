@@ -6,7 +6,7 @@ WORKDIR /src
 RUN pip install --upgrade pip && \
     pip install poetry
 
-COPY poetry.lock .
+COPY poetry.lock pyproject.toml .
 
 RUN poetry install
 
