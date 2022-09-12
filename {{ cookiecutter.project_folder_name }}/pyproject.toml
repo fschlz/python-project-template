@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_name }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.description }}"
+authors = ["Frankcisco Schulz"]
+license = "All Rights Reserved"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+toml = "^0.10.2"
+python-dotenv = "^0.19.2"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.1"
+black = "^21.11b1"
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+ipykernel = "^6.6.0"
+pre-commit = "^2.16.0"
+isort = "^5.10.1"
+Sphinx = "^4.4.0"
+recommonmark = "^0.7.1"
+readthedocs-sphinx-ext = "^2.1.4"
+rinohtype = "^0.5.3"
+rst2pdf = "^0.99"
+pydata-sphinx-theme = "^0.8.0"
+docxbuilder = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

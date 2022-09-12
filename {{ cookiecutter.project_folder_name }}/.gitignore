@@ -1,0 +1,46 @@
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Project folders
+*.vscode/
+.idea
+*_app
+*pytest_cache
+*joblib
+*tmp
+*profiling
+*logs
+*docker
+*drivers
+
+# Python specific files
+__pycache__/
+*.py[cod]
+*.ipynb
+*.ipynb_checkpoints
+
+# file extensions
+*.log
+*.csv
+*.json
+*.pkl
+*.profile
+*.cbm
+
+# temp files
+*.swp
+*~
+*.un~
+
+# keep files
+!notebooks/*.ipynb
+
+# keep folders
+!secrets
+!data/*
+!drivers
+
+# ignore files

@@ -1,0 +1,7 @@
+{
+    "project_name": "Name your project (i.e. MLOps Model Server)",
+    "project_folder_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "package_name": "{{ cookiecutter.project_folder_name.lower().replace('-', '_') }}",
+    "version": "0.1.0",
+    "description": "Describe your project in one sentence"
+}
