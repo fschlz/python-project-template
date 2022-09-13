@@ -40,7 +40,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
-    "sphinxcontrib.confluencebuilder",
     "docxbuilder",
     "pydata_sphinx_theme",
     "recommonmark",
