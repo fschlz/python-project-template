@@ -10,4 +10,6 @@ COPY poetry.lock pyproject.toml .
 
 RUN poetry install
 
-COPY ./src .
+COPY {{ cookiecutter.package_name }} ./{{ cookiecutter.package_name }}
+COPY config ./config
+COPY queries ./queries

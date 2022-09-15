@@ -4,9 +4,6 @@ version = "{{ cookiecutter.version }}"
 description = "{{ cookiecutter.description }}"
 authors = ["Frankcisco Schulz"]
 license = "{{ cookiecutter.license }}"
-packages = [
-    { include = "{{ cookiecutter.package_name }}", from = "src" },
-]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -1,0 +1,30 @@
+FROM quay.mauintra.de/dak/ki-base:latest
+LABEL maintainer="BMT/DAK KG <bmt-team-krhs@bitmarck.de>"
+
+USER root
+
+WORKDIR /opt/app-root/src
+COPY ./src/requirements.txt .
+# COPY ./poetry.lock .
+# COPY ./pyproject.toml .
+
+RUN ls -la
+
+RUN sed -i 's/src\/libnzodbc.so/src\/drivers\/libnzodbc.so/g' /etc/odbcinst.ini
+RUN --mount=type=secret,id=build-secret-password,dst=/build-secret/password \
+    --mount=type=secret,id=build-secret-username,dst=/build-secret/username \
+    git config --global credential.helper \
+    '!f() { sleep 1; echo "username=$(cat /build-secret/username)"; echo "password=$(cat /build-secret/password)"; }; f' && \
+    REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-bundle.trust.crt \
+    pip install -r requirements.txt && \
+    pip list
+    # pip install poetry && \
+    # poetry install && \
+    # poetry show
+
+COPY ./src .
+
+RUN mkdir drivers && \
+    mv *.jar *.so drivers
+
+EXPOSE 9999:9999
