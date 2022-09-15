@@ -4,9 +4,12 @@ version = "{{ cookiecutter.version }}"
 description = "{{ cookiecutter.description }}"
 authors = ["Frankcisco Schulz"]
 license = "{{ cookiecutter.license }}"
+packages = [
+    { include = "{{ cookiecutter.package_name }}", from = "src" },
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 toml = "^0.10.2"
 python-dotenv = "^0.19.2"
 PyYAML = "^6.0"
